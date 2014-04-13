@@ -1,0 +1,11 @@
+#!/bin/bash
+
+. ~/buildbot/slimroms.sh
+. ~/buildbot/aokp.sh
+. ~/buildbot/aosb.sh
+. ~/buildbot/mokee.sh
+# . ~/buildbot/omnirom.sh
+# . ~/buildbot/aospa.sh
+# . ~/buildbot/cm.sh
+# . ~/buildbot/aosp.sh
+

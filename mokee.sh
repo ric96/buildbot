@@ -14,27 +14,26 @@
 #-------------------ROMS To Be Built------------------#
 # Instructions and examples below:
 
-PRODUCT[0]="p3110"                        # phone model name (product folder name)
-LUNCHCMD[0]="p3110"                       # lunch command used for ROM
+# Galaxy tab 2 7.0
+# PRODUCT[0]="p3110"                        # phone model name (product folder name)
+# LUNCHCMD[0]="p3110"                       # lunch command used for ROM
 
-PRODUCT[1]="p5110"
-LUNCHCMD[1]="p5110"
+# PRODUCT[2]="p3100"
+# LUNCHCMD[2]="p3100"
 
-PRODUCT[2]="p3100"
-LUNCHCMD[2]="p3100"
+# nexus 5
+# PRODUCT[1]="hammerhead"
+# LUNCHCMD[1]="hammerhead"
 
-PRODUCT[3]="p5100"
-LUNCHCMD[3]="p5100"
+# Galaxy note 8.0
+PRODUCT[0]="n5100"
+LUNCHCMD[0]="n5100"
 
-# Galaxy Rab 3 8.0
-# PRODUCT[4]="lt01wifi"
-# LUNCHCMD[4]="lt01wifi"
+PRODUCT[1]="n5110"
+LUNCHCMD[1]="n5110"
 
-# PRODUCT[5]="lt013g"
-# LUNCHCMD[5]="lt013g"
-
-# PRODUCT[6]="lt01lte"
-# LUNCHCMD[6]="lt01lte"
+PRODUCT[2]="n5120"
+LUNCHCMD[2]="n5120"
 
 #---------------------Build Settings------------------#
 
@@ -67,22 +66,22 @@ recov=n
 # If you are using an external storage device as seen in the example below, be sure to mount it via your file manager (open the drive in a file manager window) or thought the command prompt before you build, or the script will not find your drive.
 # If the storage location is on the same drive as your build folder, use a "~/" to begin. It should look like this usually: ~/your storage folder... assuming your storage folder is in your "home" directory.
 
-STORAGE=~/android/roms/slimroms
+STORAGE=~/finalroms/mokee
 
 # Do you want to make a folder for the version of android you are building?
 
-AVF=y
+AVF=n
 
 # What version of android? (no".")(you only need to fill this out if you answered "y" to the question above)
 
-VER=4.4.2
+VER=.
 
 # The first few letters of your ROM name... this is needed to move the completed zip to your storage folder.
 
-ROM=Slim
+ROM=MK44.2
 
 # Your build source code directory path. In the example below the build source code directory path is in the "home" folder. If your source code directory is on an external HDD it should look like: //media/your PC username/the name of your storage device/path/to/your/source/code/folder
-SAUCE=~/android/slimkat
+SAUCE=~/mokee
 
 # REMOVE BUILD PROP (recomended for every build, otherwise the date of the build may not be changed, as well as other variables)
 
@@ -90,7 +89,7 @@ BP=y
 
 # Number for the -j parameter (choose a smaller number for slower internet conection... default is usually 4... this only controls how many threads are running during repo sync)
 
-J=16
+J=8
 
 # Sync repositories before build
 
@@ -114,7 +113,6 @@ CLOBBER=n
 
 # leave alone
 DATE=`eval date +%y``eval date +%m``eval date +%d`
-
 
 #---------------------Build Bot Code-------------------#
 # Very much not a good idea to change this unless you know what you are doing....
