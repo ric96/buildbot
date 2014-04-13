@@ -1,4 +1,4 @@
-Android_build-bot
+buildbot
 =================
 
 BuildBot script for android builds
