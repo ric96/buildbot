@@ -78,7 +78,7 @@ VER=.
 
 # The first few letters of your ROM name... this is needed to move the completed zip to your storage folder.
 
-ROM=cm
+ROM=cm-11
 
 # Your build source code directory path. In the example below the build source code directory path is in the "home" folder. If your source code directory is on an external HDD it should look like: //media/your PC username/the name of your storage device/path/to/your/source/code/folder
 SAUCE=~/aosb
